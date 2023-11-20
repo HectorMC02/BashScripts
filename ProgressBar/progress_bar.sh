@@ -11,41 +11,41 @@ function progress_bar {
 		temp=0
 		bpers=$(echo "scale=2; $default/$1" | bc)
 		empt=$(printf -- '-%.0s' $(seq 1 $default))
-		summod=0
+		addmod=0
 		clear=$(echo "\033[1K\c")
 		for (( i=0 ; i<=$1; i++ )) do
 			perc="$(echo "scale=2; $temp*100/$1" | bc)% "
-			symexactos=$(echo "scale=0; $bpers/1" | bc)
-			if (( $(echo "$symexactos == 0" | bc) ))
+			exacsym=$(echo "scale=0; $bpers/1" | bc)
+			if (( $(echo "$exacsym == 0" | bc) ))
 			then
 				mod=$(echo "$bpers % 1" | bc)
 			else
-				mod=$(echo "$bpers % $symexactos" | bc)
+				mod=$(echo "$bpers % $exacsym" | bc)
 			fi
 			if (( $(echo "$i == 0" | bc) ))
 			then
 				echo -e $clear
 				echo -ne "\r$perc$sym$empt $(($1-$temp)) secs"
 			else
-				if (( $(echo "$symexactos > 0" | bc) ))
+				if (( $(echo "$exacsym > 0" | bc) ))
 				then
-					sym=$sym$(printf -- '#%.0s' $(seq 1 $symexactos))
-					empt=$(echo ${empt%$(printf -- '?%.0s' $(seq 1 $symexactos))})
+					sym=$sym$(printf -- '#%.0s' $(seq 1 $exacsym))
+					empt=$(echo ${empt%$(printf -- '?%.0s' $(seq 1 $exacsym))})
 				fi
-				summod=$(echo "$summod+$mod" | bc)
-				if (( $(echo "$summod >= 1"| bc) ))
+				addmod=$(echo "$addmod+$mod" | bc)
+				if (( $(echo "$addmod >= 1"| bc) ))
 				then
 					sym=$sym#
 					empt=$(echo ${empt%?})
-					summod=$(echo "$summod-1" | bc)
+					addmod=$(echo "$addmod-1" | bc)
 					echo -e $clear
 					echo -ne "\r$perc$sym$empt $(($1-$temp)) secs"
 				else
-					if(( $(echo "$i == $1" | bc) && $(echo "$summod > 0"| bc) ))
+					if(( $(echo "$i == $1" | bc) && $(echo "$addmod > 0"| bc) ))
 					then
 						sym=$sym#
 						empt=$(echo ${empt%?})
-						summod=0
+						addmod=0
 					echo -e $clear
 						echo -ne "\r$perc$sym$empt $(($1-$temp)) secs"
 					fi
@@ -57,10 +57,10 @@ function progress_bar {
 		  	sleep 1
 		done
 	else
-		echo "Error, el tiempo debe ser mayor a 0 para poder ejecutarse"
+		echo "Error, the time must be greater than 0"
 	fi
 	else
-		echo "Error, introduce por consola el tiempo en segundos"
+		echo "Error, introduce the time in seconds as a parameter"
 	fi
 	echo ''
 }
