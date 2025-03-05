@@ -5,11 +5,11 @@
   <a href="#about"><strong>Explore the screenshots »</strong></a>
   <br />
   <br />
-  <a href="https://github.com/HectorMC02/bashscripts/issues/new?assignees=&labels=bug&template=01_BUG_REPORT.md&title=bug%3A+">Report a Bug</a>
+  <a href="https://github.com/HectorMC02/Proyects/BashScripts/ProgressBar/issues/new?assignees=&labels=bug&template=01_BUG_REPORT.md&title=bug%3A+">Report a Bug</a>
   ·
-  <a href="https://github.com/HectorMC02/bashscripts/issues/new?assignees=&labels=enhancement&template=02_FEATURE_REQUEST.md&title=feat%3A+">Request a Feature</a>
+  <a href="https://github.com/HectorMC02/Proyects/BashScripts/ProgressBar/issues/new?assignees=&labels=enhancement&template=02_FEATURE_REQUEST.md&title=feat%3A+">Request a Feature</a>
   .
-  <a href="https://github.com/HectorMC02/bashscripts/issues/new?assignees=&labels=question&template=04_SUPPORT_QUESTION.md&title=support%3A+">Ask a Question</a>
+  <a href="https://github.com/HectorMC02/Proyects/BashScripts/ProgressBar/issues/new?assignees=&labels=question&template=04_SUPPORT_QUESTION.md&title=support%3A+">Ask a Question</a>
 </div>
 
 
@@ -19,11 +19,8 @@
 ## About
 
 > **[?]**
-> Provide general information about your project here.
-> What problem does it (intend to) solve?
-> What is the purpose of your project?
-> Why did you undertake it?
-> You don't have to answer all the questions -- just the ones relevant to your project.
+>  
+> This script allows you to set a specific time passed as a parameter for a bar which progresses during that time.
 
 <details>
 <summary>Screenshots</summary>
@@ -32,65 +29,46 @@
 > **[?]**
 > Please provide your screenshots here.
 
-|                               Home Page                               |                               Login Page                               |
+|                       How to write the command                        |                           Execution of the script                      |
 | :-------------------------------------------------------------------: | :--------------------------------------------------------------------: |
-| <img src="docs/images/screenshot.png" title="Home Page" width="100%"> | <img src="docs/images/screenshot.png" title="Login Page" width="100%"> |
+|<img src="docs/images/progress_init.png" title="progress_init" width="100%"> | <img src="docs/images/progress.exec.png" title="progress_exec" width="100%">|
 
 </details>
 
 ### Built With
 
 > **[?]**
-> Please provide the technologies that are used in the project.
+> This is scripted on Bash lenguage, no dependences
 
 ## Getting Started
 
 ### Prerequisites
 
 > **[?]**
-> What are the project requirements/dependencies?
+> To be able to use the power of this simple script you must have another one which needs a progress bar.
 
 ### Installation
 
 > **[?]**
-> Describe how to install and get started with the project.
+> No instalation required
 
 ## Usage
 
 > **[?]**
-> How does one go about using it?
-> Provide various use cases and code examples here.
+> You must call this script in your own one has a function.
+> The usage is, inside your script:
+>        source progress_bar.sh <amount_of_time>
 
 ## Roadmap
 
-See the [open issues](https://github.com/HectorMC02/bashscripts/issues) for a list of proposed features (and known issues).
+See the [open issues](https://github.com/HectorMC02/Proyects/BashScripts/ProgressBar/issues) for a list of proposed features (and known issues).
 
-- [Top Feature Requests](https://github.com/HectorMC02/bashscripts/issues?q=label%3Aenhancement+is%3Aopen+sort%3Areactions-%2B1-desc) (Add your votes using the 👍 reaction)
-- [Top Bugs](https://github.com/HectorMC02/bashscripts/issues?q=is%3Aissue+is%3Aopen+label%3Abug+sort%3Areactions-%2B1-desc) (Add your votes using the 👍 reaction)
-- [Newest Bugs](https://github.com/HectorMC02/bashscripts/issues?q=is%3Aopen+is%3Aissue+label%3Abug)
-
-## Support
-
-> **[?]**
-> Provide additional ways to contact the project maintainer/maintainers.
-
-Reach out to the maintainer at one of the following places:
-
-- [GitHub issues](https://github.com/HectorMC02/bashscripts/issues/new?assignees=&labels=question&template=04_SUPPORT_QUESTION.md&title=support%3A+)
-- Contact options listed on [this GitHub profile](https://github.com/HectorMC02)
-
-
-## Contributing
-
-
-
-Please read [our contribution guidelines](docs/CONTRIBUTING.md), and thank you for being involved!
+- [Top Feature Requests](https://github.com/HectorMC02/Proyects/BashScripts/ProgressBar/issues?q=label%3Aenhancement+is%3Aopen+sort%3Areactions-%2B1-desc) (Add your votes using the 👍 reaction)
+- [Top Bugs](https://github.com/HectorMC02/Proyects/BashScripts/ProgressBar/issues?q=is%3Aissue+is%3Aopen+label%3Abug+sort%3Areactions-%2B1-desc) (Add your votes using the 👍 reaction)
+- [Newest Bugs](https://github.com/HectorMC02/Proyects/BashScripts/ProgressBar/issues?q=is%3Aopen+is%3Aissue+label%3Abug)
 
 ## Authors & contributors
 
 The original setup of this repository is by [Hector Matanza Cavero](https://github.com/HectorMC02).
-
-For a full list of all authors and contributors, see [the contributors page](https://github.com/HectorMC02/bashscripts/contributors).
-
 
 
