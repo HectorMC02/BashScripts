@@ -19,19 +19,15 @@
 ## About
 
 > **[?]**
->  
 > This script allows you to set a specific time passed as a parameter for a bar which progresses during that time.
 
 <details>
 <summary>Screenshots</summary>
 <br>
 
-> **[?]**
-> Please provide your screenshots here.
-
 |                       How to write the command                        |                           Execution of the script                      |
 | :-------------------------------------------------------------------: | :--------------------------------------------------------------------: |
-|<img src="docs/images/progress_init.png" title="progress_init" width="100%"> | <img src="docs/images/progress.exec.png" title="progress_exec" width="100%">|
+|<img src="docs/images/progress_init.png" title="progress_init" width="100%"> | <img src="docs/images/progress_exec.png" title="progress_exec" width="100%">|
 
 </details>
 
@@ -57,18 +53,9 @@
 > **[?]**
 > You must call this script in your own one has a function.
 > The usage is, inside your script:
->        source progress_bar.sh <amount_of_time>
-
-## Roadmap
-
-See the [open issues](https://github.com/HectorMC02/Proyects/BashScripts/ProgressBar/issues) for a list of proposed features (and known issues).
-
-- [Top Feature Requests](https://github.com/HectorMC02/Proyects/BashScripts/ProgressBar/issues?q=label%3Aenhancement+is%3Aopen+sort%3Areactions-%2B1-desc) (Add your votes using the 👍 reaction)
-- [Top Bugs](https://github.com/HectorMC02/Proyects/BashScripts/ProgressBar/issues?q=is%3Aissue+is%3Aopen+label%3Abug+sort%3Areactions-%2B1-desc) (Add your votes using the 👍 reaction)
-- [Newest Bugs](https://github.com/HectorMC02/Proyects/BashScripts/ProgressBar/issues?q=is%3Aopen+is%3Aissue+label%3Abug)
+        source progress_bar.sh <amount_of_time>
 
 ## Authors & contributors
 
 The original setup of this repository is by [Hector Matanza Cavero](https://github.com/HectorMC02).
-
 
