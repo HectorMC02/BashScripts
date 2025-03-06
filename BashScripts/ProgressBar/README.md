@@ -53,7 +53,7 @@
 > **[?]**
 > You must call this script in your own one has a function.
 > The usage is, inside your script:
-        source progress_bar.sh <amount_of_time>
+        `source progress_bar.sh <amount_of_time>`
 
 ## Authors & contributors
 
