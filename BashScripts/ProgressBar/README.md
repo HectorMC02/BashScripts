@@ -21,13 +21,13 @@
 > **[?]**
 > This script allows you to set a specific time passed as a parameter for a bar which progresses during that time.
 
-<details>
+<details open>
 <summary>Screenshots</summary>
 <br>
 
 |                       How to write the command                        |                           Execution of the script                      |
 | :-------------------------------------------------------------------: | :--------------------------------------------------------------------: |
-|<img src="docs/images/progress_init.png" title="progress_init" width="100%"> | <img src="docs/images/progress_exec.png" title="progress_exec" width="100%">|
+|<img src="docs/images/progress_init.png" title="progress_init" width="100%"> | <img src="docs/images/progress_exec.gif" title="progress_exec" width="100%">|
 
 </details>
 
