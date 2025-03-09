@@ -36,6 +36,7 @@
 
 > **[?]**
 > You have to call the script from the terminal and write 2 cities
+
 > To execute:
 
         ./distanceCalc.sh
