@@ -2,7 +2,8 @@
 ## About
 
 > **[?]**
-> This script allows you to set a specific time passed as a parameter for a bar which progresses during that time.
+> This script allows you to know the distance between two locations.
+> The main target of this script is showing use of APIs
 
 <details open>
 <summary>Screenshots</summary>
@@ -17,16 +18,15 @@
 ### Built With
 
 > **[?]**
-> This is scripted on Bash lenguage, no dependences apart from having jq installed
-
-### Getting Started
-> This script is for showing use of APIs
+> This is scripted on Bash lenguage, no dependences 
 
 ### Prerequisites
-
 > **[?]**
-> No prerrequisites needed
+> Install jq for json file management.
+> On Debian based OS you can install it with:
 
+        sudo apt install jq -y
+    
 ### Installation
 
 > **[?]**
