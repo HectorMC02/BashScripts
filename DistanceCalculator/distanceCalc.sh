@@ -1,10 +1,10 @@
 #!/bin/bash
-echo "Set the origin city"
+echo "Set the origin city (Tip: write City, Country for more precision)"
 read origin
 wget -O ./.origintext.json -q "https://api-v2.distancematrix.ai/maps/api/geocode/json?address=$origin&key=ZwdrZdC61O7hu1inldCE7wdkfUVfZIAKw3PyRtjO4xLS6Z6mtTArSiHpLsxTetGH"
 origintocoordinates=$(echo $(cat .origintext.json | jq -r ".result[] | (.geometry.location.lat)"),$(cat .origintext.json | jq -r ".result[] | (.geometry.location.lng)"))
 
-echo "Set the destination city"
+echo "Set the destination city (Tip: write City, Country for more precision)"
 read destin
 wget -O ./.destintext.json -q "https://api-v2.distancematrix.ai/maps/api/geocode/json?address=$destin&key=ZwdrZdC61O7hu1inldCE7wdkfUVfZIAKw3PyRtjO4xLS6Z6mtTArSiHpLsxTetGH"
 destintocoordinates=$(echo $(cat .destintext.json | jq -r ".result[] | (.geometry.location.lat)"),$(cat .destintext.json | jq -r ".result[] | (.geometry.location.lng)"))

@@ -35,8 +35,7 @@
 ## Usage
 
 > **[?]**
-> You have to call the script from the terminal and write 2 cities
-
+> You have to call the script from the terminal and write 2 cities. My advise is to set the cithy + country or even full address for more precision.
 > To execute:
 
         ./distanceCalc.sh
